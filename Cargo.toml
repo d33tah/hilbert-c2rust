@@ -18,3 +18,4 @@ description = "A quick-and-dirty port of Hilbert Curve code from Wikipedia, tran
 license = "WTFPL"
 
 [dependencies]
+libc = "*"
