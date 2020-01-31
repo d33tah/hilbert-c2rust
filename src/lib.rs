@@ -1,3 +1,5 @@
+ #![feature(rustc_private)]
+
 #![allow(dead_code,
          mutable_transmutes,
          non_camel_case_types,
@@ -63,7 +65,7 @@ unsafe extern "C" fn _d2xy(mut n: libc::c_uint, mut d: libc::c_uint,
     };
 }
 
-pub fn xy2d(x: libc::c_uint, y: libc::c_uint, n: libc::c_uint) -> (libc::c_uint) {
+pub fn xy2d(x: libc::c_uint, y: libc::c_uint, n: libc::c_uint) -> libc::c_uint {
     unsafe {
         return _xy2d(x, y, n);
     }
