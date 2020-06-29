@@ -1,4 +1,3 @@
- #![feature(rustc_private)]
 
 #![allow(dead_code,
          mutable_transmutes,
@@ -6,7 +5,6 @@
          non_snake_case,
          non_upper_case_globals,
          unused_mut)]
-#![feature(libc)]
 extern crate libc;
 //rotate/flip a quadrant appropriately
 unsafe extern "C" fn rot(mut n: libc::c_uint, mut x: *mut libc::c_uint,

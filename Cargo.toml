@@ -12,7 +12,7 @@
 
 [package]
 name = "hilbert-c2rust"
-version = "0.1.4"
+version = "0.1.5"
 authors = ["Jacek Wielemborek <d33tah@gmail.com>"]
 description = "A quick-and-dirty port of Hilbert Curve code from Wikipedia, transpiled by c2rust."
 license = "WTFPL"
